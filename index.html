@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Portfolio showcasing projects and skills.">
+    <title>My GitHub Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <h1>My GitHub Portfolio</h1>
-    <p>Explore my projects and skills below.</p>
-    <button onclick="scrollToSection('about')" class="button">Learn More</button>
-  </header>
+    <header>
+        <div class="container">
+            <h1>John Doe</h1>
+            <p>Full-Stack Developer | Open Source Contributor</p>
+            <a href="#projects" class="btn">View My Projects</a>
+        </div>
+    </header>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a passionate developer specializing in full-stack development and open-source projects.</p>
-    <p>I enjoy building projects that make a difference and love collaborating with others.</p>
-  </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate developer specializing in building high-quality web applications. My skills include HTML, CSS, JavaScript, and React. I love solving problems and contributing to open-source projects.</p>
+        </div>
+    </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Project 1</h3>
-      <p>A detailed description of your project. Add what makes it special here!</p>
-      <a href="#" class="button">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h3>Project 2</h3>
-      <p>Include key highlights of this project, like its tech stack or unique features.</p>
-      <a href="#" class="button">View on GitHub</a>
-    </div>
-  </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Project description here. <a href="#">View on GitHub</a></p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Project description here. <a href="#">View on GitHub</a></p>
+            </div>
+        </div>
+    </section>
 
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Programming Languages: JavaScript, Python, Go</li>
-      <li>Frameworks: React, Django</li>
-      <li>Tools: Git, Docker, Kubernetes</li>
-    </ul>
-  </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/mwkwzvow" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Want to connect? Drop me a message!</p>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit" class="button">Send</button>
-    </form>
-  </section>
-
-  <footer class="footer">
-    <p>© 2024 My Name | <a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
-  </footer>
+    <footer>
+        <div class="container">
+            <p>Connect with me: 
+                <a href="https://github.com/johndoe">GitHub</a> |
+                <a href="https://linkedin.com/in/johndoe">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
