@@ -1,0 +1,72 @@
+/* Same base styles, adding animations and sections */
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* About Section */
+.about, .skills, .contact {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin-bottom: 2rem;
+}
+
+/* Skills Section */
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Contact Form */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact button {
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #6a11cb;
+}
+
+/* Animations */
+.project-card, .about, .skills, .contact {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer links */
+.footer a:hover {
+  text-decoration: underline;
+}
